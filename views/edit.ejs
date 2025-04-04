@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <form action="/edit" method="post">
+        <% if (locals.userPost){%>
+    <input type="text" name="id" placeholder="id" value="<%=userPost.id%>" required>
+    <input type="text" name="blogtitle" placeholder="blogtitle" value="<%=userPost.blogtitle%>">
+    <input type="text" name="blogcontent" placeholder="blogcontent" value="<%=userPost.blogcontent%>">
+    <input type="text" name="username" placeholder="username" value="<%=userPost.name%>">
+     <button>Edit</button>
+     <%}%>
+     </form>
+  
+</body>
+</html>
